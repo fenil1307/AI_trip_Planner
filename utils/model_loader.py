@@ -6,6 +6,7 @@ from utils.config_loader import load_config
 from langchain_groq import ChatGroq
 from langchain_openai import ChatOpenAI
 
+
 class ConfigLoader:
     def __init__(self):
         print(f"Loaded config.....")
