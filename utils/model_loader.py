@@ -6,10 +6,6 @@ from utils.config_loader import load_config
 from langchain_groq import ChatGroq
 from langchain_openai import ChatOpenAI
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 62195ae (Files are updated)
 class ConfigLoader:
     def __init__(self):
         print(f"Loaded config.....")
@@ -17,11 +13,7 @@ class ConfigLoader:
     
     def __getitem__(self, key):
         return self.config[key]
-<<<<<<< HEAD
 
-=======
-     
->>>>>>> 62195ae (Files are updated)
 class ModelLoader(BaseModel):
     model_provider: Literal["groq", "openai"] = "groq"
     config: Optional[ConfigLoader] = Field(default=None, exclude=True)
