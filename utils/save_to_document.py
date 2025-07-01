@@ -6,11 +6,11 @@ def save_document(response_text: str, directory: str = "./output"):
     os.makedirs(directory, exist_ok=True)
     
     
-    # Create markdown content with metadata header
+   
     markdown_content = f"""# 🌍 AI Travel Plan
 
     # **Generated:** {datetime.datetime.now().strftime('%Y-%m-%d at %H:%M')}  
-    # **Created by:** Atriyo's Travel Agent
+    # **Created by:** Tripper's Travel Agent
 
     ---
 
@@ -24,7 +24,7 @@ def save_document(response_text: str, directory: str = "./output"):
     try:
         
         timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-        filename = f"{directory}/AI_Travel_Plan_{timestamp}.md"
+        filename = f"{directory}/AI_trip_Planner_{timestamp}.md"
 
         print(filename)
 
